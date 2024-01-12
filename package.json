@@ -1,0 +1,34 @@
+{
+  "name": "log-change",
+  "version": "0.1.0",
+  "description": "TOML-based CLI for CHANGELOG branch-compatible tracking",
+  "bin": {
+    "log-change": "./bin/bin.js"
+  },
+  "main": "lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diltdicker/log-change.git"
+  },
+  "keywords": [
+    "cli",
+    "changelog",
+    "command-line",
+    "command-line-tool",
+    "command-line-interface",
+    "changelog-generator",
+    "changelogs"
+  ],
+  "author": "@diltdicker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diltdicker/log-change/issues"
+  },
+  "homepage": "https://github.com/diltdicker/log-change#readme",
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
+}
