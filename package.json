@@ -1,6 +1,6 @@
 {
   "name": "log-change-cli",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "TOML-based CLI for CHANGELOG branch-compatible tracking",
   "bin": {
     "log-change": "./bin/bin.js"
