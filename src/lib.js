@@ -179,7 +179,7 @@ function appendRelease(releaseObj) {
     if (fs.existsSync(CHANGELOG_MD)) {
 
         // read old changelog
-        const oldChangeLog = fs.readFileSync(CHANGELOG_MD).toString().split("\n").slice(1).join('\n');
+        const oldChangeLog = fs.readFileSync(CHANGELOG_MD).toString().split("\n").slice(2).join('\n');
 
         // write header
         fs.writeFileSync(CHANGELOG_MD, ejs.render(HEADER_TEMPLATE), {encoding: "utf-8"})
