@@ -13,21 +13,21 @@ npm i -g log-change-cli
 ## Initialize Changelog
 
 ```bash
-log-change-cli init
+log-change init
 ```
 
 ## Create new Change
 
 ```bash
-log-change-cli new change -i  12 -m "a comment to describe the change" "a second comment"
+log-change new change -i  12 -m "a comment to describe the change" "a second comment"
 ```
 
 ## Update Changelog with new Release
 
 ```bash
-log-change-cli release -v x.y.z
+log-change release -v x.y.z
 ```
 
 ```bash
-log-change-cli release -v x.y.z -d 2024-01-01 -m "notes for the release"
+log-change release -v x.y.z -d 2024-01-01 -m "notes for the release"
 ```
