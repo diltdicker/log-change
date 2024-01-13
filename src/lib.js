@@ -10,8 +10,8 @@ const CHANGELOG_CONFIG = "config.toml"
 const EXAMPLE_CHANGE = "example.toml"
 const SAFE_FILES = [CHANGELOG_CONFIG, EXAMPLE_CHANGE]
 
-const HEADER_TEMPLATE = fs.readFileSync("./src/res/header_template.ejs", {encoding: "utf-8"})
-const RELEASE_TEMPLATE = fs.readFileSync("./src/res/release_template.ejs", {encoding: "utf-8"})
+const HEADER_TEMPLATE = fs.readFileSync(__dirname.concat("/res/header_template.ejs"), {encoding: "utf-8"})
+const RELEASE_TEMPLATE = fs.readFileSync(__dirname.concat("/res/release_template.ejs"), {encoding: "utf-8"})
 
 // const EJS_TEST = fs.readFileSync("./src/res/ejs_test.ejs", {encoding: "utf-8"})
 
