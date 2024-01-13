@@ -14,8 +14,8 @@ program
   .version(version);
 
 program.command('init')
-    // .description('Initializes current directory with a new CHANGELOG.md and CHANGELOGS dir')
-    .option('-g --github-url', "Sets the link for the Github repo so that new releases contain hyperlinks to issues tracked in Github: (https://github.com/<user>/<repoName>)")
+    .description('Initializes current directory with a new CHANGELOG.md and CHANGELOGS dir')
+    // .option('-g --github-url', "Sets the link for the Github repo so that new releases contain hyperlinks to issues tracked in Github: (https://github.com/<user>/<repoName>)")
     .action(() => {
         logChange.initChangelog()
     });
