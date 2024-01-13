@@ -2,11 +2,11 @@
 
 # 1.0.0
 
-### Jan 12, 2024
+### Jan 13, 2024
 
 Created the Initial Log-Change CLI
 
 ### New
 
-* #0
-    - created log-change-cli
+#0
+ - created log-change-cli

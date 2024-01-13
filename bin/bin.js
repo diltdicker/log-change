@@ -65,16 +65,18 @@ program.command('release')
     .requiredOption('-v, --version <releaseVersion>', "Version number for release: (x.y.z)")
     .option('-d --date <releaseDate>', "Date text for relase", dayjs().format('MMM DD, YYYY'))
     .option('-m --summary <releaseSummary>', 'Addtional description text for release', null)
-    .option('-x --no-delete', "Does not delete TOML files after appending release to CAHNGELOG.md", false)
+    .option('-p --preserve', "Does not delete TOML files after appending release to CAHNGELOG.md", false)
     // .option("-l --release-link <releaseLink>", "Link to release page or release artifacts")
     // .option("-h --hide-num", "Hide issue numbers in release", false)
     .action((options) => {
+
+        console.log(options)
 
         logChange.appendRelease({
             releaseVer: options.version,
             releaseDate: options.date,
             releaseSummary: options.summary,
-            noDelete: options.delete
+            noDelete: options.preserve
         })
     });
 

@@ -10,9 +10,9 @@
 
 ### New
 <% for (let i = 0; i < newList.length; i++) { %>
-* #<%- newList[i]["issue"] %>
+#<%- newList[i]["issue"] %>
 <% for (let k = 0; k < newList[i]["comments"].length; k++) { -%>
-    - <%- newList[i]["comments"][k] %>
+ - <%- newList[i]["comments"][k] %>
 <% } // end of k loop -%>
 <% } // end of i loop -%>
 <% } // end of if statement -%>
@@ -20,9 +20,9 @@
 
 ### Changes
 <% for (let i = 0; i < changeList.length; i++) { %>
-* #<%- changeList[i]["issue"] %>
+#<%- changeList[i]["issue"] %>
 <% for (let k = 0; k < changeList[i]["comments"].length; k++) { -%>
-    - <%- changeList[i]["comments"][k] %>
+ - <%- changeList[i]["comments"][k] %>
 <% } // end of k loop -%>
 <% } // end of i loop -%>
 <% } // end of if statement -%>
@@ -30,9 +30,9 @@
 
 ### Fixes
 <% for (let i = 0; i < fixList.length; i++) { %>
-* #<%- fixList[i]["issue"] %>
+#<%- fixList[i]["issue"] %>
 <% for (let k = 0; k < fixList[i]["comments"].length; k++) { -%>
-    - <%- fixList[i]["comments"][k] %>
+ - <%- fixList[i]["comments"][k] %>
 <% } // end of k loop -%>
 <% } // end of i loop -%>
 <% } // end of if statement -%>
@@ -40,9 +40,9 @@
 
 ### Breaks
 <% for (let i = 0; i < breakList.length; i++) { %>
-* #<%- breakList[i]["issue"] %>
+#<%- breakList[i]["issue"] %>
 <% for (let k = 0; k < breakList[i]["comments"].length; k++) { -%>
-    - <%- breakList[i]["comments"][k] %>
+ - <%- breakList[i]["comments"][k] %>
 <% } // end of k loop -%>
 <% } // end of i loop -%>
 <% } // end of if statement -%>
