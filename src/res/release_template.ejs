@@ -1,0 +1,49 @@
+<%- "\n" -%>
+# <%- releaseVer %>
+
+### <%- releaseDate %>
+<% if (releaseSummary != null) { -%>
+
+<%- releaseSummary %>
+<% } // end of releaseSummary -%>
+<% if (newList.length > 0) { -%>
+
+### New
+<% for (let i = 0; i < newList.length; i++) { %>
+* #<%- newList[i]["issue"] %>
+<% for (let k = 0; k < newList[i]["comments"].length; k++) { -%>
+    - <%- newList[i]["comments"][k] %>
+<% } // end of k loop -%>
+<% } // end of i loop -%>
+<% } // end of if statement -%>
+<% if (changeList.length > 0) { -%>
+
+### Changes
+<% for (let i = 0; i < changeList.length; i++) { %>
+* #<%- changeList[i]["issue"] %>
+<% for (let k = 0; k < changeList[i]["comments"].length; k++) { -%>
+    - <%- changeList[i]["comments"][k] %>
+<% } // end of k loop -%>
+<% } // end of i loop -%>
+<% } // end of if statement -%>
+<% if (fixList.length > 0) { -%>
+
+### Fixes
+<% for (let i = 0; i < fixList.length; i++) { %>
+* #<%- fixList[i]["issue"] %>
+<% for (let k = 0; k < fixList[i]["comments"].length; k++) { -%>
+    - <%- fixList[i]["comments"][k] %>
+<% } // end of k loop -%>
+<% } // end of i loop -%>
+<% } // end of if statement -%>
+<% if (breakList.length > 0) { -%>
+
+### Breaks
+<% for (let i = 0; i < breakList.length; i++) { %>
+* #<%- breakList[i]["issue"] %>
+<% for (let k = 0; k < breakList[i]["comments"].length; k++) { -%>
+    - <%- breakList[i]["comments"][k] %>
+<% } // end of k loop -%>
+<% } // end of i loop -%>
+<% } // end of if statement -%>
+<%- -%>

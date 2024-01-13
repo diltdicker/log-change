@@ -29,6 +29,9 @@
   },
   "homepage": "https://github.com/diltdicker/log-change#readme",
   "dependencies": {
-    "commander": "^11.1.0"
+    "@iarna/toml": "^2.2.5",
+    "commander": "^11.1.0",
+    "dayjs": "^1.11.10",
+    "ejs": "^3.1.9"
   }
 }
