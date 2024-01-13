@@ -1,6 +1,6 @@
 {
-  "name": "log-change",
-  "version": "0.1.0",
+  "name": "log-change-cli",
+  "version": "1.0.1",
   "description": "TOML-based CLI for CHANGELOG branch-compatible tracking",
   "bin": {
     "log-change": "./bin/bin.js"
@@ -29,6 +29,9 @@
   },
   "homepage": "https://github.com/diltdicker/log-change#readme",
   "dependencies": {
-    "commander": "^11.1.0"
+    "@iarna/toml": "^2.2.5",
+    "commander": "^11.1.0",
+    "dayjs": "^1.11.10",
+    "ejs": "^3.1.9"
   }
 }
