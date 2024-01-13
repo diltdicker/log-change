@@ -1,6 +1,15 @@
 generated using [log-change](https://github.com/diltdicker/log-change)
 # Change Log
 
+# 1.0.4
+
+### Jan 13, 2024
+
+### Fixes
+
+#0.2
+ - fixed __dirname bug
+
 # 1.0.2
 
 ### Jan 13, 2024
