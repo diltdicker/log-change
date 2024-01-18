@@ -67,7 +67,7 @@ program.command('release')
     .option('-m --summary <releaseSummary>', 'Addtional description text for release', null)
     .option('-p --preserve', "Does not delete TOML files after appending release to CAHNGELOG.md", false)
     // .option("-l --release-link <releaseLink>", "Link to release page or release artifacts")
-    // .option("-h --hide-num", "Hide issue numbers in release", false)
+    .option("-s --show", "Show issue numbers in release", false)
     .action((options) => {
 
         console.log(options)
@@ -76,7 +76,8 @@ program.command('release')
             releaseVer: options.version,
             releaseDate: options.date,
             releaseSummary: options.summary,
-            noDelete: options.preserve
+            noDelete: options.preserve,
+            showNums: options.show
         })
     });
 
