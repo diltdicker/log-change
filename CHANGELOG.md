@@ -1,6 +1,14 @@
 generated using [log-change](https://github.com/diltdicker/log-change)
 # Change Log
 
+# 1.1.0
+
+### Jan 17, 2024
+
+### Changes
+
+- Added new feature to hide/show issue numbers with changes. Set hide to default.
+
 # 1.0.4
 
 ### Jan 13, 2024

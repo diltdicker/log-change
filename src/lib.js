@@ -12,6 +12,7 @@ const SAFE_FILES = [CHANGELOG_CONFIG, EXAMPLE_CHANGE]
 
 const HEADER_TEMPLATE = fs.readFileSync(__dirname.concat("/res/header_template.ejs"), {encoding: "utf-8"})
 const RELEASE_TEMPLATE = fs.readFileSync(__dirname.concat("/res/release_template.ejs"), {encoding: "utf-8"})
+const HIDE_RELEASE_TEMPLATE = fs.readFileSync(__dirname.concat("/res/release_hide_template.ejs"), {encoding: "utf-8"})
 
 // const EJS_TEST = fs.readFileSync("./src/res/ejs_test.ejs", {encoding: "utf-8"})
 
@@ -186,7 +187,13 @@ function appendRelease(releaseObj) {
 
         // write new release
         const reelaseData = Object.assign({}, releaseObj, readChangeLogs());
-        const releaseStr = ejs.render(RELEASE_TEMPLATE, reelaseData)
+        let releaseStr;
+        if (releaseObj.show) {
+            releaseStr = ejs.render(RELEASE_TEMPLATE, reelaseData)
+        } else {
+            releaseStr = ejs.render(HIDE_RELEASE_TEMPLATE, reelaseData)
+        }
+
         fs.appendFileSync(CHANGELOG_MD, releaseStr, {encoding: "utf-8"})
 
         // append old releases
